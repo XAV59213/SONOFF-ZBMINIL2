@@ -55,7 +55,8 @@ Le **SONOFF ZBMINIL2** est un module **relais ZigBee compact** *(≈ 39 × 32 ×
 - **Interopérabilité** : intégration native **ZHA** ou **Zigbee2MQTT**.  
 - **Stabilité** : latence constatée < 200 ms, lien stable sur 1 an (tests personnels).  
 
-![Aperçu](assets/design-sans-titre.png)
+
+<img src="[https://cdn.forumdomotique.com/monthly_2025_10/Designsanstitre.png.373e664afc5de5ad42117276219f44ef.png](https://forumdomotique.com/uploads/monthly_2025_10/Zbminil2.png.83a8e32aed3a9a435fdc8e502a797313.png)" alt="Schéma de design domotique" width="500" height="300">
 
 Avec Home Assistant, vous **centralisez** le contrôle, créez des **automatisations** (ex. : éteindre si personne dans la pièce), et exposez à vos **assistants vocaux**.
 
