@@ -107,8 +107,10 @@ Dans le **coffret électrique** (même circuit **10A**), pour une **alimentation
 - **3 appuis rapides** : bascule **mode poussoir**  
 - Dans Zigbee2MQTT, **actualiser** pour voir le mode
 
-![Schéma poussoir sans télérupteur](assets/schema-poussoir-sans-telerupteur.png)  
-![Schéma poussoir avec télérupteur (pas de retour d’état)](assets/schema-poussoir-avec-telerupteur.png)
+  **Schéma poussoir sans télérupteur**
+<img src="https://forumdomotique.com/uploads/monthly_2025_10/Zbminil2.png.83a8e32aed3a9a435fdc8e502a797313.png" alt="Schéma de design domotique" width="500" height="300">
+  **Schéma poussoir avec télérupteur**
+<img src="https://forumdomotique.com/uploads/monthly_2025_10/Zbminil2.png.83a8e32aed3a9a435fdc8e502a797313.png" alt="Schéma de design domotique" width="500" height="300">
 
 ---
 
