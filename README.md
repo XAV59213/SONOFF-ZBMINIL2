@@ -1,6 +1,6 @@
 # SONOFF-ZBMINIL2
 
-<image-card alt="Schéma de design domotique" src="images/Designsanstitre.png" ></image-card>
+<img src="https://cdn.forumdomotique.com/monthly_2025_10/Designsanstitre.png.373e664afc5de5ad42117276219f44ef.png" alt="Schéma de design domotique" width="500" height="300">
 
 ## Installer et configurer le SONOFF ZBMINIL2 ZigBee sur Home Assistant : guide complet (poussoir, va-et-vient, interrupteur simple)
 
@@ -215,4 +215,67 @@ actions:
         - notify.anais
     action: notify.send_message
 mode: single
-'''
+Avantages
+L’installation est simplifiée grâce au remplacement du télérupteur sans nécessiter de câblage complexe, tout en intégrant des fonctionnalités domotiques. La suppression du télérupteur garantit des retours d’état fiables, permettant à l’application de refléter systématiquement l’état réel de la charge. La flexibilité est assurée par la possibilité de contrôler une même lampe à partir de plusieurs poussoirs via le réseau Zigbee.
+Limites
+La charge maximale supportée est de 6 A (~1380 W à 230 V), et il est recommandé d’installer un fusible pour les charges proches de cette limite afin d’assurer la sécurité. Un hub Zigbee est requis pour la configuration initiale et la gestion des automatisations. Une latence peut survenir si le réseau Zigbee est saturé ou si le hub est trop éloigné de l’appareil.
+Conclusion
+En remplaçant le télérupteur par le ZBMINIL2 dans le coffret électrique, vous modernisez votre installation tout en garantissant des retours d’état précis pour une domotique fiable. Ce setup est parfait pour les couloirs, escaliers ou toute zone avec plusieurs points de commande.
+Mode va-et-vient : la fonction du SONOFF ZBMINIL2 pour moderniser un éclairage double interrupteur
+La fonction va-et-vient du SONOFF ZBMINIL2 permet de contrôler une charge (comme une lampe ou un appareil < 6A) depuis deux points de commande différents, par exemple deux interrupteurs situés à chaque extrémité d’un couloir ou d’un escalier. Contrairement à un va-et-vient traditionnel qui nécessite un câblage complexe avec des fils "navettes", le ZBMINIL2 simplifie l’installation grâce à ses bornes S1 et S2, qui gèrent deux interrupteurs (ou poussoirs) via le protocole Zigbee. Cette configuration est idéale pour moderniser une installation existante tout en ajoutant des fonctionnalités domotiques, comme le contrôle via une application (eWeLink, Home Assistant) ou des assistants vocaux (Alexa, Google Home). Comme pour la fonction poussoir, il est recommandé de placer le ZBMINIL2 dans le coffret électrique sur le circuit 10A, en supprimant tout télérupteur existant pour garantir des retours d’état fiables.
+Pourquoi connaître le branchement actuel de vos va-et-vient ?
+Pour intégrer le SONOFF ZBMINIL2 dans une installation va-et-vient, il est essentiel de comprendre le câblage actuel de votre système électrique, surtout dans une maison de plain-pied où les câbles, y compris les fils navettes, convergent souvent dans des boîtes de dérivation. Par exemple, dans une maison de plain-pied, il est courant d’avoir des boîtes de dérivation près des interrupteurs ou dans le plafond, où tous les câbles (phase, neutre, navettes, et sortie vers la lampe) sont regroupés. Les fils navettes sont utilisés dans un va-et-vient traditionnel pour relier les deux interrupteurs et permettre le contrôle alterné de la lampe.
+En quoi c’est important ?
+Une identification précise des fils est essentielle pour reconnecter correctement le ZBMINIL2, en repérant les navettes reliant les interrupteurs, la phase et la connexion à la lampe. Une erreur d’identification peut provoquer un dysfonctionnement ou un court-circuit. Le ZBMINIL2 simplifie le câblage par rapport à un va-et-vient classique en éliminant les navettes, les bornes S1 et S2 remplaçant leur logique, ce qui ne nécessite que la phase et les connexions des interrupteurs ou poussoirs vers ces bornes. Si un télérupteur est présent dans le circuit, par exemple dans le coffret électrique, il doit être retiré, car il gère mécaniquement l’état de la charge, empêchant le ZBMINIL2 de fournir des retours d’état fiables, ce qui pourrait entraîner une désynchronisation entre l’application Zigbee et l’état réel de la lampe. En installant le ZBMINIL2 dans le coffret électrique et en supprimant le télérupteur, le contrôle est centralisé, garantissant une synchronisation parfaite avec l’application. Pour une maison de plain-pied avec des boîtes de dérivation contenant les navettes, il est crucial de localiser la boîte où arrivent la phase du disjoncteur 10A et la sortie vers la lampe. Installer le ZBMINIL2 dans le coffret électrique simplifie les connexions et évite de modifier les boîtes de dérivation, souvent encombrées ou difficiles d’accès.
+En résumé, connaître le branchement actuel (phase, navettes, charge) permet de reconnecter le ZBMINIL2 correctement, d’éliminer les navettes inutiles, et de garantir une installation domotique fiable.
+Schéma de principe (maquette)
+Voici une description textuelle du schéma pour une maquette ou une installation réelle en mode va-et-vient, adaptée à une maison avec boîtes de dérivation :
+Composants :
+
+SONOFF ZBMINIL2
+Deux interrupteurs classiques va-et-vient
+Lampe ou charge < 6A (ex. : lampe LED 230V)
+Disjoncteur 10A dans le coffret électrique
+Fils électriques (phase, neutre si requis par la charge)
+Hub Zigbee (ex. : SONOFF ZBBridge, Conbee II)
+
+Connexions :
+
+Disjoncteur 10A : Fournit la phase (L) au circuit, remplaçant l’alimentation d’un éventuel télérupteur.
+Borne L in (ZBMINIL2) : Connectée à la phase du disjoncteur 10A.
+Borne S1 (ZBMINIL2) : Connectée à un fil du premier interrupteur/poussoir. L’autre fil de cet interrupteur retourne à la phase (L).
+Borne S2 (ZBMINIL2) : Connectée à un fil du second interrupteur/poussoir. L’autre fil de cet interrupteur retourne à la phase (L).
+Borne L1 out (ZBMINIL2) : Connectée à la lampe. L’autre borne de la lampe va au neutre (N) si nécessaire (le ZBMINIL2 n’a pas besoin de neutre pour fonctionner).
+
+Schéma de principe Va-et-Vient
+Note sur les navettes
+Les fils navettes présents dans les boîtes de dérivations sont souvent orange ou violet .
+Étapes d’installation
+
+Couper l’alimentation : Désactivez le disjoncteur général pour des raisons de sécurité.
+Identifier le câblage actuel : Dans la boîte de dérivation ou le coffret, localisez la phase (venant du disjoncteur 10A), les fils navettes (reliant les deux interrupteurs), et la sortie vers la lampe. Utilisez un multimètre si nécessaire pour confirmer la phase.
+Retirer un éventuel télérupteur : Si un télérupteur est présent dans le coffret, débranchez ses fils (phase, poussoirs, sortie vers la charge). Notez les connexions pour faciliter le remplacement.
+Installer le ZBMINIL2 :
+
+Connectez la phase du disjoncteur 10A à la borne L in du ZBMINIL2.
+Connectez le premier interrupteur/poussoir à la borne S1 et à la phase (ignorez les navettes).
+Connectez le second interrupteur/poussoir à la borne S2 et à la phase.
+Connectez la borne L1 à la charge (lampe), et reliez la lampe au neutre si requis.
+Fixation : Placez le ZBMINIL2 dans le coffret électrique (sur un rail DIN ou fixé sécuritairement).
+
+
+Appairage Zigbee : Rétablissez l’alimentation. Maintenez le bouton du ZBMINIL2 pendant 5 secondes (LED clignote). Ajoutez le module à votre hub Zigbee via l’app (eWeLink, Zigbee2MQTT, etc.).
+Configuration : Dans l’app, sélectionnez le mode "va-et-vient" (souvent appelé "Two-Way Control" ou "Toggle Mode"). Configurez les bornes S1 et S2 pour qu’une pression sur l’un ou l’autre interrupteur alterne l’état de la lampe (ON/OFF).
+
+Test et vérification
+Vérifiez que chaque interrupteur ou poussoir modifie correctement l’état de la lampe, en alternant entre allumé et éteint. Confirmez que l’application affiche précisément l’état de la lampe, prouvant ainsi le bon fonctionnement des retours d’état. Effectuez les tests avec une charge inférieure à 6 A pour éviter tout risque de surcharge. Assurez-vous que les deux interrupteurs contrôlent la même charge de manière synchronisée, garantissant une gestion cohérente et fiable.
+Paramétrage du SONOFF ZBMINIL2
+Pour passer en mode on et off appuie 3 fois rapidement sur le bouton du SONOFF ZBMINIL2, il basculera automatiquement en mode poussoir.
+Une petite actualisation sur zigbee2mqtt permettra d’actualiser ça fonction poussoir.
+Exemple avec ma maquette de test
+Dans cette maquette j'ai choisi la fonction ou on a supprimer le télérupteur pour avoir toute les remonter d’information sur Zigbee2MQTT
+Exemple d’automatisation
+Automatisation de l'interrupteur du couloir avec l’interrupteur de la salle de bain
+Cette automatisation active automatiquement l’éclairage du couloir dès que la lumière de la salle de bain est allumée. Configurée dans Home Assistant, elle se déclenche lorsque l’interrupteur de la salle de bain, reconnu comme une entité de type lampe, passe à l’état allumé, commandant ainsi l’activation de l’éclairage du couloir. Aucune condition supplémentaire, comme une restriction horaire, n’est appliquée, garantissant une exécution immédiate à chaque allumage de la lumière. Conçue pour s’exécuter une seule fois par activation, l’automatisation évite les déclenchements répétés tant que l’état de la lampe reste inchangé.
+Une utilisation de l’éclairage qui permet d'améliorer le confort et simplifier l’usage.
+yaml
