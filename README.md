@@ -133,7 +133,8 @@ Contrôle depuis **deux points** (ex. couloir/escalier) **sans navettes** tradit
 - 3 appuis rapides → (bascule mode)  
 - Configurer en **Two-Way/Toggle** dans l’app
 
-![Schéma va-et-vient](assets/schema-va-et-vient.png)
+**Schéma va-et-vient** 
+<img src="https://cdn.forumdomotique.com/monthly_2025_10/Capturedcrandu2025-10-0515-11-04.thumb.png.ad3ae5095f9ec1ec1823b411077e963c.png" alt="Schéma de design domotique" width="500" height="300">
 
 ---
 
@@ -277,26 +278,6 @@ mode: single
 - **Appairage impossible** → maintenir **5 s** pour reset, rapprocher du coordinateur.  
 - **Inversions ON/OFF** → changer le **mode** (Edge/Toggle/Pulse).  
 - **Coupures** → vérifier serrage des bornes, section des fils et disjoncteur.
-
----
-
-## Annexes (images, schémas)
-
-> Remplace les noms par tes fichiers réels dans `/assets/` du repo.
-
-- `assets/design-sans-titre.png`  
-- `assets/schema-poussoir-sans-telerupteur.png`  
-- `assets/schema-poussoir-avec-telerupteur.png`  
-- `assets/schema-va-et-vient.png`  
-- `assets/schema-interrupteur-simple.png`  
-- `assets/etape-1-outils.png`  
-- `assets/etape-2-zero-volt.png`  
-- `assets/etape-3-mesure-1.png`  
-- `assets/etape-3-mesure-2.png`  
-- `assets/etape-4-boite.png`  
-- `assets/etape-5-cablage-1.png`  
-- `assets/etape-6-fixation.png`  
-- `assets/etape-7-appairage.png`
 
 ---
 
