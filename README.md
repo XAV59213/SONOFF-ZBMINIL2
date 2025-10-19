@@ -162,33 +162,6 @@ Cas le plus **simple** : un seul point de commande, interrupteur classique ou po
 
 ---
 
-## Illustration pratique : pas à pas (inter simple)
-
-> ⚠️ **Sécurité** : disjoncteur **coupé**, vérification **0 V** au multimètre.
-
-1. **Déballage & préparation outils**  
-   ![Outils](assets/etape-1-outils.png)
-2. **Vérification absence de tension**  
-   ![0 V](assets/etape-2-zero-volt.png)
-3. **Identifier phase/neutre/terre**  
-   ![Mesures](assets/etape-3-mesure-1.png) ![Mesures](assets/etape-3-mesure-2.png)
-4. **Préparer la boîte d’encastrement**  
-   ![Boîte](assets/etape-4-boite.png)
-5. **Câbler l’interrupteur simple**  
-   - Phase → **L in**  
-   - Retour lampe → **L1 out**  
-   - Interrupteur → **S1** (+ retour phase)  
-   ![Câblage](assets/etape-5-cablage-1.png)
-6. **Fixer l’interrupteur**  
-   ![Fixation](assets/etape-6-fixation.png)
-7. **Test & appairage Zigbee**  
-   ![Appairage](assets/etape-7-appairage.png)
-8. **Automatisation VMC (exemple)** – voir plus bas  
-9. **Exposition Alexa**  
-10. **Finitions**
-
----
-
 ## Exemples d’automatisations Home Assistant
 
 ### 1) Allumer la salle de bain après 20h si personne à la maison
