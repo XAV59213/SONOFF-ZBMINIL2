@@ -1,9 +1,13 @@
 # Installer et configurer le **SONOFF ZBMINIL2** ZigBee sur Home Assistant  
 ## Guide complet (poussoir, va-et-vient, interrupteur simple)
 
-<a href="https://forumdomotique.com/" target="_blank">
-    <img src="assets/Capture d’écran du 2025-10-19 14-11-27.png" alt="Schéma de design domotique" width="500" height="300">
-</a>
+<p>
+    <a href="https://forumdomotique.com/" target="_blank">
+        <img src="assets/Capture d’écran du 2025-10-19 14-11-27.png" alt="Schéma de design domotique" width="500" height="300">
+    </a>
+    <br>
+    Venez découvrir l'article complet : test, maquette, schéma et paramétrage sur <a href="https://forumdomotique.com/" target="_blank">forumdomotique.com</a> !
+</p>
 
 <img src="https://cdn.forumdomotique.com/monthly_2025_10/Designsanstitre.png.373e664afc5de5ad42117276219f44ef.png" alt="Schéma de design domotique" width="500" height="300">
 
