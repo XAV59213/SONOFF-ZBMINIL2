@@ -147,7 +147,10 @@ Cas le plus **simple** : un seul point de commande, interrupteur classique ou po
 - **L1 out** : vers la lampe (la lampe retourne au **neutre**)  
 - **S2** : optionnel si 2ᵉ commande
 
-![Schéma interrupteur simple](assets/schema-interrupteur-simple.png)
+**Schéma interrupteur simple** 
+
+<img src="https://cdn.forumdomotique.com/monthly_2025_10/Capturedcrandu2025-10-0514-06-17.thumb.png.5921adb55d276c42035394df952a2bc6.png" alt="Schéma de design domotique" width="500" height="300">
+
 
 ---
 
