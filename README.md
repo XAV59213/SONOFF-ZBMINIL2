@@ -1,5 +1,9 @@
 # SONOFF-ZBMINIL2
+
 Installer et configurer le SONOFF ZBMINIL2 ZigBee sur Home Assistant : guide complet (poussoir, va-et-vient, interrupteur simple)
+
+https://cdn.forumdomotique.com/monthly_2025_10/Designsanstitre.png.373e664afc5de5ad42117276219f44ef.png
+<img src="https://cdn.forumdomotique.com/monthly_2025_10/Designsanstitre.png.373e664afc5de5ad42117276219f44ef.png" alt="Schéma de design domotique" width="500" height="300">
 Dans le monde de la domotique, les modules ZigBee comme le SONOFF ZBMINIL2 offrent une flexibilité incroyable pour moderniser vos interrupteurs existants sans gros travaux. Ce petit module compact se glisse derrière un interrupteur mural standard ou directement dans votre tableau électrique et transforme n'importe quel bouton en commande intelligente : allumage ou extinction à distance, simulation de présence, ou intégration dans des scénarios complexes comme l’activation d’une lumière au lever du soleil.
 
 Si vous utilisez Home Assistant comme hub pour piloter votre maison connectée, intégrer le SONOFF ZBMINIL2 est un jeu d’enfant grâce aux protocoles ZigBee 3.0 pris en charge par ZHA ou Zigbee2MQTT.
