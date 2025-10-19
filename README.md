@@ -215,6 +215,9 @@ actions:
         - notify.anais
     action: notify.send_message
 mode: single
+
+
+
 Avantages
 L’installation est simplifiée grâce au remplacement du télérupteur sans nécessiter de câblage complexe, tout en intégrant des fonctionnalités domotiques. La suppression du télérupteur garantit des retours d’état fiables, permettant à l’application de refléter systématiquement l’état réel de la charge. La flexibilité est assurée par la possibilité de contrôler une même lampe à partir de plusieurs poussoirs via le réseau Zigbee.
 Limites
