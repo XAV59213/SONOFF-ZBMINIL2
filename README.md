@@ -134,6 +134,7 @@ Contrôle depuis **deux points** (ex. couloir/escalier) **sans navettes** tradit
 - Configurer en **Two-Way/Toggle** dans l’app
 
 **Schéma va-et-vient** 
+
 <img src="https://cdn.forumdomotique.com/monthly_2025_10/Capturedcrandu2025-10-0515-11-04.thumb.png.ad3ae5095f9ec1ec1823b411077e963c.png" alt="Schéma de design domotique" width="500" height="300">
 
 ---
