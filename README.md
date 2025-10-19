@@ -3,6 +3,8 @@
 
 <img src="https://cdn.forumdomotique.com/monthly_2025_10/Designsanstitre.png.373e664afc5de5ad42117276219f44ef.png" alt="Schéma de design domotique" width="500" height="300">
 
+<img src="https://cdn.forumdomotique.com/monthly_2025_10/Designsanstitre.png.373e664afc5de5ad42117276219f44ef.png" alt="Schéma de design domotique" width="500" height="300">
+
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2024%2B-blue)](#)
 [![Zigbee2MQTT](https://img.shields.io/badge/Zigbee2MQTT-Support-green)](#)
 [![ZHA](https://img.shields.io/badge/ZHA-Support-green)](#)
